@@ -66,7 +66,7 @@ export default class UIComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
-        
+        <Text style={styles.Title}>UIComponent</Text>
         <StatusBar
           backgroundColor="lightgray"
           barStyle="dark-content"
@@ -168,6 +168,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "lightgray",
     padding: 20
+  },
+  Title: {
+    fontSize: 35,
+    alignSelf: "center",
+    fontStyle: 'normal',
+    marginBottom: 30,
+    color: "orange",
+    fontWeight: 'normal',
   },
   textInput: {
     height: 45,
